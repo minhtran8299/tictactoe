@@ -3,8 +3,8 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const NumberButton = (props) => {
   return (
-    <TouchableOpacity style={{...Styles.container, width: props.ButtonWidth}} onPress={() => props.ButtonAction(props.Number)}>
-      <Text style={Styles.text}>{props.Number}</Text>
+    <TouchableOpacity style={{...Styles.container, width: props.ButtonWidth}}>
+      <Text style={Styles.text}>{props.String}</Text>
     </TouchableOpacity>
   );
 };
